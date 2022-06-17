@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: #FAFAFA;
+}
+
+.container{
+    margin:0 auto;
+    width: 935px;
+}
+
+
+.all-in{
+    display: flex;
+    height: 100%;
+    max-height: 625px ;
+    padding:7vh;
+    justify-content: center;
+}
+
+
+
+/* animacao Slide CSS-PURO */
+
+.phone{
+    height: 581px ;
+    min-width: 390px;
+    background-image: url(./assets/img/backgroundinsta.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end; 
+    padding-right: 18px;
+
+}
+
+
+.galeria{
+    display: flex;
+    width: 480px;
+    height: 581px;
+    position: relative;
+    overflow: hidden;
+    justify-content: flex-end;
+    margin-top: 25px;
+    max-height: 493px;
+    max-width: 250px;
+   
+ 
+}
+
+.foto{
+    max-height: 493px;
+    max-width: 250px;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+
+.foto:nth-child(2){
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4){
+    animation-delay: 15s;
+}
+
+
+@keyframes animacao {
+    25%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}
+
+
+
+
+/* formulario */
+
+
+
+
+.formulario-container{
+    display: flex;
+    flex-direction: column;
+    height: 581px;
+    width: 350px;
+    margin-left:2vw ;
+}
+
+.half{
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+}
+.half img{
+ margin: 0 auto;
+ margin-top: 7vh;
+
+} 
+#username{
+    margin-top: 6vh;
+}
+
+#instaIMG{
+    max-width: 175px;
+  
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 405px;
+    width: 348px;
+    border: solid 0.5px #DBDBDB;
+
+}
+
+.formulario input{
+    
+    border: solid 0.5px #DBDBDB;
+    width: 266px;
+    height: 38px;
+    margin-top: 1vh;
+    padding-left: 0.5vw;
+    background-color: #FAFAFA;
+}
+
+.formulario input::placeholder{
+    color:#8e8e8e;
+   
+}
+
+#btn{
+    height: 30px;
+    width: 268px;
+    background-color: #1B7FED;
+    color: #FFF;
+    font-weight: 700;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 2vh;
+
+}
+
+.formulario h6{
+    text-align: center;
+    color:#8e8e8e;
+    font-size: 13px;
+    margin-top:2vh;
+    
+
+}
+#faceico{
+    height: 15px;
+    margin: 0;
+}
+.entrarFace{
+    margin-top: 0;
+
+}
+
+.links-insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    
+
+}
+
+
+.links-insta h5{
+    font-size: 14px;
+    color:#385185;
+    margin-left: 1.5vh;
+}
+.formulario p{
+    font-size: 12px;
+    color:#385185;
+    text-align: center;
+    margin-top:3vh ;
+    
+    
+}
+
+
+
+.formulario a{
+    text-decoration: none;
+    
+}
+
+
+
+
+.cadastro{
+    display: flex;
+    height: 61px;
+    width: 348px;
+    border: solid 0.5px #DBDBDB;
+    margin-top: 1.3vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro p{
+    font-size: 14px;
+}
+.cadastro a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #0095F6;
+    font-weight: 700;
+}
+
+
+.baixarAplicativos{
+    height: 61px;
+    width: 348px;
+ 
+}
+.baixarAplicativos p{
+    text-align: center;
+    margin-top: 3.2vh;
+    font-size: 14px;
+   
+}
+.baixarAplicativosIMG{
+ 
+    width: 348px; 
+    margin-top: 3.2vh;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.baixarAplicativos img{
+    height: 40px;
+    width: 136px;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    margin-top: 50px;
+    font-size:11px ;
+    
+}
+
+
+.ft{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.ft a{
+    text-decoration: none;
+    color: #8e8e8e;
+    margin-right: 1vw;
+    margin-top: 1.5vh;
+
+} 
+
+.links-ft{
+  display: flex;
+
+}
+
+
+.ft2{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 2vh;
+
+}
+.ft2 a{
+    text-decoration: none;
+    color: grey;
+    margin-bottom:2vh;
+    margin-right: 1vw;
+
+} 
+
+.ft3{
+    display: flex;
+    flex-wrap: wrap;
+    color: grey;
+    justify-content: center;
+    padding-bottom: 10vh;
+    margin-top: 2vh;
+}
+.ft3 select{
+    border: none;
+    color: grey;
+}
+.ft3 p{
+   
+    margin-left: 1vw;
+
+}
+
+
+@media (max-width:950px){
+    .container{
+        width: 80vw;
+        display: flex;
+       
+    }
+    .phone{
+        display: none;
+    }
+
+    .formulario-container{
+        min-width: 355px;
+    }
+    
+}
+
+@media (max-width:500px){
+    .formulario-container{
+        border: none;
+    }
+    .formulario{
+  
+        border: 0;
+    
+    }
+    
+    
+    .cadastro{
+      
+        border: 0;
+    }
+    
+}
